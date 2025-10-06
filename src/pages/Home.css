@@ -1,0 +1,116 @@
+.home-wrapper {
+  padding: 2rem;
+  text-align: -webkit-center;
+}
+
+.home-summary {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 783px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.summary-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.8rem 1.6rem;
+  border: 1px solid rgba(13, 71, 161, 0.12);
+  box-shadow: 0 16px 32px rgba(13, 71, 161, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 36px rgba(13, 71, 161, 0.18);
+}
+
+.summary-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: #0d47a1;
+}
+
+.summary-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: #e3f2fd;
+  font-size: 1.6rem;
+}
+
+.summary-card__title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.summary-card__value {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0d47a1;
+}
+
+.summary-card__meta {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+.summary-card__link {
+  margin-top: auto;
+  align-self: flex-start;
+  color: #0d47a1;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.summary-card__link::after {
+  content: "\2192";
+  font-size: 1.2rem;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.summary-card__link:hover {
+  color: #0b3d8a;
+  text-decoration: underline;
+}
+
+.summary-card__link:hover::after {
+  transform: translateX(4px);
+}
+
+.summary-card--loading .summary-card__value,
+.summary-card--loading .summary-card__meta {
+  color: #94a3b8;
+}
+
+.home-summary__error {
+  margin-top: 1.5rem;
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .home-wrapper {
+    padding: 1.5rem 1rem;
+    text-align: -webkit-center;
+  }
+
+  .summary-card {
+    padding: 1.6rem 1.4rem;
+  }
+}
+
