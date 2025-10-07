@@ -560,6 +560,8 @@ const CobrancasEmitidas = () => {
       {actionsDialog && (
         <Dialog
           open
+           //{size="sm"}
+           title="Cobrança"
           //{description={actionsDialog.nm_cliente ?? undefined}}
           onClose={closeActionsDialog}
           actions={
@@ -600,6 +602,7 @@ const CobrancasEmitidas = () => {
       {dueDateDialog && (
         <Dialog
           open
+          size="sm"
           title="Alterar data de vencimento"
           description="Informe a nova data de vencimento."
           onClose={handleCloseDueDateDialog}

@@ -27,16 +27,18 @@
 }
 
 .topbar__logo {
-  height: 42px;
+  height: 65px;
   width: auto;
   display: block;
   object-fit: contain;
+  position: absolute;
 }
 
 .topbar__brand h1 {
   margin: 0;
   font-size: 1.25rem;
   font-weight: 700;
+  padding-left: 124px;
 }
 
 .topbar__nav {
