@@ -348,6 +348,11 @@
   color: #161718;
 }
 
+.status-success {
+    color: #00796b; 
+    font-weight: 600;
+}
+
 @media (max-width: 960px) {
   .cobrancas-emitidas__field--wide {
     grid-column: span 1;
@@ -484,6 +489,7 @@ textarea.input {
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-bottom: 100px;
 }
 
 th,

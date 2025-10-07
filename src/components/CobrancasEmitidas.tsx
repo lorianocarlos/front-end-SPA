@@ -533,7 +533,9 @@ const CobrancasEmitidas = () => {
                   <td>{formatDate(item.data_criacao_cobranca)}</td>
                   <td>{formatDate(item.dt_vencimento)}</td>
                   <td className="cobrancas-emitidas__descricao">{item.desc1 ?? "-"}</td>
-                  <td>{item.status_cobranca ?? "-"}</td>
+                  <td className={item.status_cobranca === "Recebida" ? "status-success" : undefined} >
+                      {item.status_cobranca ?? "-"}
+                  </td>
                   <td className="cobrancas-emitidas__align-right">{formatCurrency(item.valor ?? 0)}</td>
                   <td>{formatDate(item.data_atualizacao, true)}</td>
                   <td className="cobrancas-emitidas__actions-cell">
